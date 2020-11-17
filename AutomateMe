@@ -1,0 +1,7 @@
+# Collect host history faster 
+
+for i in `cat list.txt` ; do 
+echo $i
+shodan host --history $i
+sleep 2
+done 
